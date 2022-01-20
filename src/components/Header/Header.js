@@ -65,12 +65,15 @@ const Header = () => (
                 </Link>
               </li>
             </ul>
+            
+          </div>  
+          <div className="demo">
             <div className="book-a-demo">
-              <Link className="nav-link book-demo" to="/bookademo">
+              <Link className="btn btn-danger book-demo" to="/bookademo">
                 Book A Demo
               </Link>
-            </div>
-          </div>  
+            </div>   
+          </div>
         </div>
       </nav>
     </div>

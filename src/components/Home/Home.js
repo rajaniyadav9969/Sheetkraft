@@ -4,7 +4,6 @@ import { Link } from "gatsby"
 // import Seo from "../seo"
 import './Home.scss';
 
-
 const Home = () => {
     return(
         // <>
@@ -40,6 +39,10 @@ const Home = () => {
           <div className="intro-items">
             <div className="item">
               <img className="icon" src="/icons/1.jpg" alt="" />
+              {/* <StaticImage
+                alt="icon-1" className="icon"
+                src=""  
+              /> */}
               <h2 className="title">Rapid Application Development Framework</h2>
             </div>
             <div className="item">
