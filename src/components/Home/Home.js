@@ -216,7 +216,7 @@ const Home = () => {
 
         <section className="what-has-sheetkraft-achieved default-section">
           <div className="container">
-            <div className="archived-heading">
+            <div className="archived-heading ">
               <h2 className="main-heading">Our Happy Customers</h2>
               <span className="average-our-client">What are people saying about SheetKraft</span>    
             </div> 
@@ -224,14 +224,14 @@ const Home = () => {
               <div className="happy-customer-list">
                 <div className="single-item">
                   <div className="item">
-                    <img src="/icons/Multi_Commodity_Exchange.png" alt="" />
+                    <img class="customer-logo" src="/icons/Multi_Commodity_Exchange.png" alt="" />
                     <p className="info">"As an operations unit, we are now able to calculate brokerage every month-end which helps us support the business as we scale."</p>
                     <p>- Operations Head​​</p>
                   </div>  
                 </div>
                 <div className="single-item">
                   <div className="item">
-                    <img src="/icons/hdfc-mutual-fund-vector-logo.png" alt="" />
+                    <img class="customer-logo" src="/icons/hdfc-mutual-fund-vector-logo.png" alt="" />
                     <p className="info">"We prefer to use the Sheetkraft platform for all our new automation requirements."</p>
                     <p>
                       <b>
@@ -243,12 +243,12 @@ const Home = () => {
                 </div>
                 <div className="single-item">
                   <div className="item">
-                    <img src="/icons/citrus.png" alt="" />
+                    <img class="customer-logo" src="/icons/citrus.png" alt="" />
                     <p className="info">"Our settlement process automation resulted in the elimination of all manual errors and reduced the processing time from 5 hours to 15 minutes on a daily basis."</p>
                     <p>- Operations Head​​​​</p>
                   </div>  
                 </div>
-                <div className="single-item">
+                {/* <div className="single-item">
                   <div className="item">
                     <img src="/icons/aditya-birla-capital.png" alt="" />
                     <p className="info">"We Value Sheetkraft as a trusted partner in our mission to streamline business operations."</p>
@@ -259,7 +259,7 @@ const Home = () => {
                       - HDFC Mutual Funds
                     ​​</p>
                   </div>  
-                </div>
+                </div> */}
               </div>
             </div>
           </div> 
@@ -296,81 +296,71 @@ const Home = () => {
           </div>       
         </section>
 
-        <section>
-          <div className="container">
-            <div className="archived-heading">
-              <span>Blog</span>
-              <h2 className="main-heading">Reads Our Latest News & Blog</h2>
-              <span className="average-our-client">Learn what SheetKraft has done for its clients</span>    
-            </div>
-            <div className="about-intro"> 
-              <div className="intro-items">
-                <div className="item">
-                  <img className="icon" src="/icons/1.jpg" alt="" />
-                  <h2 className="title">Rapid Application Development Framework</h2>
-                </div>
-                <div className="item">
-                  <img className="icon" src="/icons/2.jpg" alt="" />
-                  <h2 className="title">Easily Composable Native Building Blocks</h2>
-                </div>
-                <div className="item">
-                  <img className="icon" src="/icons/3.jpg" alt="" />
-                  <h2 className="title">Strong Governance and Built-In Audit Trails</h2>
-                </div>
-                <div className="item">
-                  <img className="icon" src="/icons/4.jpg" alt="" />
-                  <h2 className="title">Customizable Reporting, Dashboards and Analytics</h2>
-                </div>
-                <div className="item">
-                  <img className="icon" src="/icons/5.jpg" alt="" />
-                  <h2 className="title">Fastest Spreadsheet Processing In The Business</h2>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        
-
-
         <section className="what-has-sheetkraft-achieved default-section blog">
           <div className="container">
-            <div className="archived-heading">
-              <span>Blog</span>
+            <div className="archived-heading text-center">
+              <span className="sub-title">Blog</span>
               <h2 className="main-heading">Reads Our Latest News & Blog</h2>
               <span className="average-our-client">Learn what SheetKraft has done for its clients</span>    
             </div> 
             <div className="content">
               <div className="happy-customer-list">
                 <div className="single-item">
-                  <div className="item">
+                  <div className="item ">
                     <img src="/img/WhatsApp-Image-2019-10-16-at-18.14.20-1-1-1270x590.jpeg" alt="" />
-                    <p className="info">"As an operations unit, we are now able to calculate brokerage every month-end which helps us support the business as we scale."</p>
-                    <p>- Operations Head​​</p>
-                  </div>  
-                </div>
-                <div className="single-item">
-                  <div className="item">
-                    <img src="/img/Merchant-discount-rate-9-1270x815.png" alt="" />
-                    <p className="info">"We prefer to use the Sheetkraft platform for all our new automation requirements."</p>
-                    <p>
-                      <b>
-                        Vaibhav Joshi (Operations Head)
-                      </b><br/>
-                      - HDFC Mutual Funds
-                    ​​</p>
+                    <div class="post-info">
+                      <div class="post-cats">
+                        <Link href="/" rel="category tag">News</Link>
+                      </div>
+                      <h3 class="post-title">
+                        <a href="/">Aditya Birla BizLabs winner SheetKraft felicitated by Padma Shri Mohandas Pai</a>
+                      </h3>
+                      <div class="post-footer">
+                        <Link class="amandalite-button readmore" href="/">Learn More</Link>
+                      </div>
+                    </div>
                   </div>  
                 </div>
                 <div className="single-item">
                   <div className="item">
                     <img src="/img/paper-pen-claim-1270x815.png" alt="" />
-                    <p className="info">"Our settlement process automation resulted in the elimination of all manual errors and reduced the processing time from 5 hours to 15 minutes on a daily basis."</p>
-                    <p>- Operations Head​​​​</p>
+                    <div class="post-info">
+                      <div class="post-cats">
+                        <Link href="/" rel="category tag">Banking / </Link>
+                        <Link href="/" rel="category tag">Mutual Fund</Link>
+                      </div>
+                      <h3 class="post-title">
+                        <a href="/">Accurate and Errorless Reports – Claim Processing</a>
+                      </h3>
+                      <div class="post-footer">
+                        <Link class="amandalite-button readmore" href="/">Learn More</Link>
+                      </div>
+                    </div>
+                  </div>  
+                </div>
+                <div className="single-item">
+                  <div className="item">
+                    <img src="img/Merchant-discount-rate-9-1270x815.png" alt="" />
+                    <div class="post-info">
+                      <div class="post-cats">
+                        <Link href="/" rel="category tag">Automation</Link>
+                      </div>
+                      <h3 class="post-title">
+                        <a href="/">Voting System (For Broker’s Rating)</a>
+                      </h3>
+                      <div class="post-footer">
+                        <Link class="amandalite-button readmore" href="/">Learn More</Link>
+                      </div>
+                    </div>
                   </div>  
                 </div>
               </div>
             </div>
-          </div>   
+          </div> 
         </section>
+        
+
+
       </div>
     </div>
     );  
